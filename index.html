@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-enhanced Text-to-Speech App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI-enhanced Text-to-Speech App</h1>
+    <textarea id="text-input" rows="5" placeholder="Enter text to be spoken..."></textarea>
+    <div class="options">
+      <select id="voice-select">
+        <option value="">Select a voice</option>
+      </select>
+      <select id="style-select">
+        <option value="normal">Normal</option>
+        <option value="natural">Natural</option>
+        <option value="dramatic">Dramatic</option>
+        <option value="comic">Comic</option>
+        <option value="morgan-freeman">Morgan Freeman-like</option>
+      </select>
+    </div>
+    <div class="controls">
+      <button id="speak-btn">Speak</button>
+      <button id="pause-btn">Pause</button>
+      <button id="resume-btn">Resume</button>
+      <button id="stop-btn">Stop</button>
+      <button id="download-btn" disabled>Download Audio</button>
+    </div>
+    <div class="feedback">
+      <h3>Provide Feedback</h3>
+      <div class="slider-container">
+        <label for="accent-slider">Accent:</label>
+        <input type="range" id="accent-slider" min="0" max="100" value="50">
+      </div>
+      <div class="slider-container">
+        <label for="tone-slider">Tone:</label>
+        <input type="range" id="tone-slider" min="0" max="100" value="50">
+      </div>
+      <div class="slider-container">
+        <label for="pitch-slider">Pitch:</label>
+        <input type="range" id="pitch-slider" min="0" max="100" value="50">
+      </div>
+      <button id="submit-feedback">Submit Feedback</button>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
